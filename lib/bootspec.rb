@@ -1,0 +1,2 @@
+class Bootspec
+end
