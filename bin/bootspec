@@ -1,1 +1,2 @@
 #!/usr/bin/env ruby
+puts `rspec --color --tty -I #{File.join(File.dirname(__FILE__), '..', 'lib')} --require 'bootspec' #{ARGV.join(' ')}`
