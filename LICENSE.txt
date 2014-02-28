@@ -1,4 +1,4 @@
-Copyright (c) 2014 Eric Tsiliacos and Vinson Chuong
+Copyright (c) 2014 Vinson Chuong and Eric Tsiliacos
 
 MIT License
 
