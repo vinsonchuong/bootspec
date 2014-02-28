@@ -1,2 +1,4 @@
-class Bootspec
+require 'bootspec/version'
+
+module Bootspec
 end
