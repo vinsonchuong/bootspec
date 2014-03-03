@@ -1,28 +1,44 @@
 # Bootspec
-
-TODO: Write a gem description
+Provides an easy, framework-agnostic way for you to write your first acceptance spec and drive out the bootstrapping of your web application. Bootspec wraps RSpec, adding the ability to run Capybara feature specs with PhantomJS.
 
 ## Installation
-
 Add this line to your application's Gemfile:
-
-    gem 'bootspec'
+```ruby
+gem 'bootspec'
+```
 
 And then execute:
-
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
-
-    $ gem install bootspec
+```bash
+$ gem install bootspec
+```
 
 ## Usage
+Create a project folder containing a feature spec:
+```ruby
+# project/specs/project_spec.rb
+feature 'Project' do
+  scenario 'User visits homepage' do
+    visit 'http://localhost:3000'
+    expect(page).to have_text('Hello World!')
+  end
+end
+```
 
-TODO: Write usage instructions here
+And then execute:
+```bash
+$ cd project
+$ bootspec --format documentation
+```
+
+Bootspec takes the same arguments as RSpec.
 
 ## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/bootspec/fork )
+1. Fork it ( http://github.com/vinsonchuong/bootspec/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

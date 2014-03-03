@@ -9,7 +9,12 @@ Gem::Specification.new do |s|
   s.date = '2014-02-27'
   s.license = 'MIT'
   s.summary = 'Bootstrap your walking skeleton'
-  s.description = 'Provides an easy way for you to run your first acceptance spec to drive out your development process.'
+  s.description = [
+    'Provides an easy, framework-agnostic way for you to write your first',
+    'acceptance spec and drive out the bootstrapping of your web application.',
+    'Bootspec wraps RSpec, adding the ability to run Capybara feature specs',
+    'with PhantomJS.'
+  ].join(' ')
   s.authors = ['Vinson Chuong', 'Eric Tsiliacos']
   s.email = ''
   s.homepage = ''
